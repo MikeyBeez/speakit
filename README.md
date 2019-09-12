@@ -13,11 +13,13 @@ sudo apt install xsel festival festvox-en1 xdotool -y
 
 I create a simple bash script:  
 
+###
 #!/bin/bash
 
-xdotool click --repeat 3 1
-xsel |festival --tts --pipe
+xdotool click --repeat 3 1  
+xsel |festival --tts --pipe  
 xdotool mousemove_relative 0 100
+###
 
 The xdotool stuff is optional.  xsel operates on whatever is selected.  xdotool click --repeat 3 1 will select whatever paragraph is under the mouse pointer. Remove the xdotool stuff if you want to do your own selecting.  
 
