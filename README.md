@@ -25,10 +25,10 @@ The xdotool stuff is optional.  xsel operates on whatever is selected.  xdotool 
 
 Place the file where you put put your personal binaries.  For example:
 
-mkdir ~/local/binchmod +
+mkdir ~/local/bin
 vim ~/local/bin/speakit.sh
 chmod +x ~/local/bin/speakit.sh
 
-Then I create a a keyboard shortcut for the command bash ~/local/bin/speakit.sh (usually I map it to ctrl k)  
+Then I create a custom keyboard shortcut for the command bash ~/local/bin/speakit.sh (usually I map it to ctrl k)  Here's how to do that in Ubuntu:  https://help.ubuntu.com/stable/ubuntu-help/keyboard-shortcuts-set.html.en      
 
 
