@@ -1,6 +1,8 @@
 # speakit
 Add text to speech to Linux
 
+Aparently TTS for Linux is a moving target.  This worked.  Now it needs festlex-poslex too.  If you have trouble, just look up the error.  It's possible one of the requirements has added a requirement.  Ugh!  That's just how it goes with free software.  As of 9-23-19 this works on Ubuntu MATE 19.04.  
+
 Requirements:
 xsel
 festival
@@ -23,12 +25,12 @@ xsel |festival --tts --pipe
 xdotool mousemove_relative 0 100
 ###
 
-The xdotool stuff is optional.  xsel operates on whatever is selected.  xdotool click --repeat 3 1 will select whatever paragraph is under the mouse pointer. Remove the xdotool stuff if you want to do your own selecting.  
+The xdotool stuff is optional.  xsel operates on whatever is selected by piping it out to festival.  xdotool click --repeat 3 1 will select whatever paragraph is under the mouse pointer. Remove the xdotool stuff if you want to do your own selecting.  
 
 Place the file where you put put your personal binaries.  For example:
 
-mkdir ~/local/bin
-vim ~/local/bin/speakit.sh
+mkdir -p ~/local/bin
+cp SpeakIt.sh ~/local/bin/
 chmod +x ~/local/bin/speakit.sh
 
 Then I create a custom keyboard shortcut for the command bash ~/local/bin/speakit.sh (usually I map it to ctrl k)  Here's how to do that in Ubuntu:  https://help.ubuntu.com/stable/ubuntu-help/keyboard-shortcuts-set.html.en      
