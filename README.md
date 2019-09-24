@@ -11,7 +11,7 @@ and xdotool
 
 I generally add these package by the apt package manager.  aptget should also work.  If you use a different package manager, that shouldn't be a problem either.
 
-sudo apt install xsel festival festvox-en1 xdotool -y
+sudo apt install xsel festival festlex-poslex festvox-en1 xdotool -y
 
 I create a simple bash script:  
 
