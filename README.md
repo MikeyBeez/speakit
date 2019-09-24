@@ -5,7 +5,7 @@ Requirements:
 xsel
 festival
 festvox-en1 or any other festival voice you like better
-xdotool (optional)
+and xdotool 
 
 I generally add these package by the apt package manager.  aptget should also work.  If you use a different package manager, that shouldn't be a problem either.
 
