@@ -4,6 +4,8 @@ Add text to speech to Linux
 Requirements:
 xsel
 festival
+festlex-poslex
+
 festvox-en1 or any other festival voice you like better
 and xdotool 
 
