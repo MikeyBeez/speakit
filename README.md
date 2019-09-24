@@ -33,6 +33,9 @@ mkdir -p ~/local/bin
 cp speakit.sh ~/local/bin/
 chmod +x ~/local/bin/speakit.sh
 
+Optionally if you know about symbolic links, you could link ~/local/bin/speakit.sh to the repository.  For example ln -s ~/gits/speakit/speakit.sh speakit.sh
+Now a git pull will always get you the latest version.
+
 Then I create a custom keyboard shortcut for the command bash ~/local/bin/speakit.sh (usually I map it to ctrl k)  Here's how to do that in Ubuntu:  https://help.ubuntu.com/stable/ubuntu-help/keyboard-shortcuts-set.html.en      
 
 
