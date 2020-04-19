@@ -1,18 +1,15 @@
 # speakit
 Add text to speech to Linux
 
-Aparently TTS for Linux is a moving target.  This worked.  Now it needs festlex-poslex too.  If you have trouble, just look up the error.  It's possible one of the requirements has added a requirement.  Ugh!  That's just how it goes with free software.  As of 9-23-19 this works on Ubuntu MATE 19.04.  Nevertheless, this is a great example of how very little custom code one needs to use sometimes to get a feature added to one's operating system because of standard applications and libraries.    
 
 Requirements:
 xdotool
 xsel
-festival
-festlex-poslex
-festvox-en1 (or any other festival voice you like better) 
+gtts 
 
 I generally add these package by the apt package manager.  aptget should also work.  If you use a different package manager, that shouldn't be a problem either.
 
-sudo apt install xsel festival festlex-poslex festvox-en1 xdotool -y
+sudo apt install xsel xdotool -y
 
 I create a simple bash script:  
 clone this repository or just create this simple file in an editor:  (cloneing will get any updates)
