@@ -5,11 +5,13 @@ Add text to speech to Linux
 Requirements:
 xdotool
 xsel
-gtts 
+festival
+festlex-poslex
+festvox-en1 (or any other festival voice you like better)
 
 I generally add these package by the apt package manager.  aptget should also work.  If you use a different package manager, that shouldn't be a problem either.
 
-sudo apt install xsel xdotool -y
+sudo apt install xsel festival festlex-poslex festvox-en1 xdotool -y
 
 I create a simple bash script:  
 clone this repository or just create this simple file in an editor:  (cloneing will get any updates)
